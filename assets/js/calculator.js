@@ -49,3 +49,35 @@ var reset = document.getElementById('reset');
 var clear = document.getElementById('clear');
 var del = document.getElementById('del');
 var masmenos = document.getElementById('masmenos');
+
+//btn clic text
+one.onclick = function(e) {
+    display.textContent = display.textContent + "1";
+}
+two.onclick = function(e) {
+    display.textContent = display.textContent + "2";
+}
+three.onclick = function(e) {
+    display.textContent = display.textContent + "3";
+}
+four.onclick = function(e) {
+    display.textContent = display.textContent + "4";
+}
+five.onclick = function(e) {
+    display.textContent = display.textContent + "5";
+}
+six.onclick = function(e) {
+    display.textContent = display.textContent + "6";
+}
+seven.onclick = function(e) {
+    display.textContent = display.textContent + "7";
+}
+eight.onclick = function(e) {
+    display.textContent = display.textContent + "8";
+}
+nine.onclick = function(e) {
+    display.textContent = display.textContent + "9";
+}
+zero.onclick = function(e) {
+    display.textContent = display.textContent + "0";
+}
