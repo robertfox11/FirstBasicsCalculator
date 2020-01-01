@@ -4,15 +4,19 @@ function results() {
     switch (opera) {
         case "+":
             res = parseFloat(operatorA) + parseFloat(operatorB);
+            localStorage.setItem(res, opera)
             break;
         case "-":
             res = parseFloat(operatorA) - parseFloat(operatorB);
+            localStorage.setItem(res, opera)
             break;
         case "*":
             res = parseFloat(operatorA) * parseFloat(operatorB);
+            localStorage.setItem(res, opera)
             break;
         case "/":
             res = parseFloat(operatorA) / parseFloat(operatorB);
+            localStorage.setItem(res, opera)
             break;
     }
     resetAc();
