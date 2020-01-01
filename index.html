@@ -4,58 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <title>Calculadora JavaScript</title>
-
+    <title>Calculator JavaScript</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Offside">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-
-    <script type="text/javascript" src="js/calculadora.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 
 <body>
 
-    <h1>Desarrollado por Javier Ocampos</h1>
-    <h2>Para el curso de programación en JavaScript de Píldoras informáticas</h2>
+    <h1>Desarrollado por Robert Salazar ARias </h1>
+    <h2>Html CSS JavaScript</h2>
+    <div class="calculator">
+        <img src="assets/img/logo-casio.png" class="logo" alt="Casio">
+        <div class="display">
 
-    <div id="calculadora">
-        <img src="img/logo-casio.png" class="logo" alt="Casio">
+        </div>
+        <div class="buttons">
 
-        <!-- Se deja un espacio en blanco para que exista nodeValue -->
-        <div class="display"> </div>
+            <button id="masmenos" onclick="opuest()"> (+/-)</button>
+            <button id="del" onclick="retro()">DEL</button>
+            <button id="clear" onclick="resetAc()">AC</button>
+            <button id="reset">C</button>
+            <button id="seven">7</button>
 
-        <div id="botones">
-            <button class="limpiar" onclick="calculadora('C')">Limpiar</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
 
-            <button onclick="calculadora(7)">7</button>
-            <button onclick="calculadora(8)">8</button>
-            <button onclick="calculadora(9)">9</button>
-            <button onclick="calculadora('/')">÷</button>
+            <button id="division">/</button>
 
-            <button onclick="calculadora(4)">4</button>
-            <button onclick="calculadora(5)">5</button>
-            <button onclick="calculadora(6)">6</button>
-            <button onclick="calculadora('*')">x</button>
+            <button id="four">4</button>
 
-            <button onclick="calculadora(1)">1</button>
-            <button onclick="calculadora(2)">2</button>
-            <button onclick="calculadora(3)">3</button>
-            <button onclick="calculadora('-')">-</button>
+            <button id="five">5</button>
 
-            <button onclick="calculadora('.')">.</button>
-            <button onclick="calculadora(0)">0</button>
-            <button onclick="calculadora('=')">=</button>
-            <button onclick="calculadora('+')">+</button>
+            <button id="six">6</button>
+
+            <button id="multiplication">*</button>
+
+            <button id="one">1</button>
+
+            <button id="two">2</button>
+
+            <button id="three">3</button>
+
+            <button id="subtraction">-</button>
+
+            <button id="equals">=</button>
+
+            <button id="decimal">.</button>
+
+            <button id="zero">0</button>
+
+            <button id="sum">+</button>
         </div>
 
         <footer class="copyright">
-            Leedeo calculator system 1.0
         </footer>
     </div>
 
+    <script src="assets/js/calculator.js"></script>
 </body>
+
 
 </html>
