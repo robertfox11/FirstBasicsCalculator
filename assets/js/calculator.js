@@ -4,12 +4,11 @@ var operatorA = "0";
 var operatorB = "0";
 var opera;
 var coma = 0;
-
+//save in array
 var listenerBtn = [];
 //operators
 var sum = document.getElementById('sum');
 var subtraction = document.getElementById('subtraction');
-
 var multiplication = document.getElementById('multiplication');
 var division = document.getElementById('division');
 //Add in array
@@ -80,25 +79,4 @@ nine.onclick = function(e) {
 }
 zero.onclick = function(e) {
     display.textContent = display.textContent + "0";
-}
-
-//funcion results que realiza la operacion
-function results() {
-    var res = 0;
-    switch (opera) {
-        case "+":
-            res = parseFloat(operatorA) + parseFloat(operatorB);
-            break;
-        case "-":
-            res = parseFloat(operatorA) - parseFloat(operatorB);
-            break;
-        case "*":
-            res = parseFloat(operatorA) * parseFloat(operatorB);
-            break;
-        case "/":
-            res = parseFloat(operatorA) / parseFloat(operatorB);
-            break;
-    }
-    resetAc();
-    display.textContent = res;
 }
