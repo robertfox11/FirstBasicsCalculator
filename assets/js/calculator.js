@@ -81,3 +81,24 @@ nine.onclick = function(e) {
 zero.onclick = function(e) {
     display.textContent = display.textContent + "0";
 }
+
+//funcion results que realiza la operacion
+function results() {
+    var res = 0;
+    switch (opera) {
+        case "+":
+            res = parseFloat(operatorA) + parseFloat(operatorB);
+            break;
+        case "-":
+            res = parseFloat(operatorA) - parseFloat(operatorB);
+            break;
+        case "*":
+            res = parseFloat(operatorA) * parseFloat(operatorB);
+            break;
+        case "/":
+            res = parseFloat(operatorA) / parseFloat(operatorB);
+            break;
+    }
+    resetAc();
+    display.textContent = res;
+}
