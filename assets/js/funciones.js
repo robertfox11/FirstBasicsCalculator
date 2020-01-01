@@ -77,7 +77,7 @@ del.onclick = function(e) {
 opuesto.onclick = function(e) {
     operatorA = display.textContent;
     let nx = Number(operatorA);
-    let nx = -nx;
-    letx = String(nx);
+    nx = -nx;
+    let x = String(nx);
     display.innerHTML = x;
 }
