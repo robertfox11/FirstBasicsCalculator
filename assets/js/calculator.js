@@ -47,7 +47,7 @@ listenerBtn.push(equals);
 var reset = document.getElementById('reset');
 var clear = document.getElementById('clear');
 var del = document.getElementById('del');
-var masmenos = document.getElementById('masmenos');
+var opuesto = document.getElementById('masmenos');
 
 //btn clic text
 one.onclick = function(e) {

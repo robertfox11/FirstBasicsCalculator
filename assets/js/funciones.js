@@ -60,6 +60,24 @@ clear.addEventListener('click', resetAc());
 
 //reset funcion btn c borra el ultimo numero escrito
 reset.addEventListener('click', function() {
-    operatorA = display.textContent = "";
-    coma = 0;
-})
+        operatorA = display.textContent = "";
+        coma = 0;
+    })
+    //retro funcion del ultimo escrito
+del.onclick = function(e) {
+        operatorA = display.textContent;
+        cifras = operatorA.length;
+        br = operatorA.substr(cifras - 1, cifras)
+        x = operatorA.substr(0, cifras - 1)
+        if (x == "") { x = "0"; }
+        if (br == ".") { coma = 0; }
+        display.innerHTML = x;
+    }
+    //converitmos valor negativo o positivo
+opuesto.onclick = function(e) {
+    operatorA = display.textContent;
+    let nx = Number(operatorA);
+    let nx = -nx;
+    letx = String(nx);
+    display.innerHTML = x;
+}
